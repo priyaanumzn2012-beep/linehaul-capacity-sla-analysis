@@ -1,34 +1,41 @@
-# Linehaul Capacity Planning & SLA Risk Analysis (SQL)
+# 🚚 Linehaul Capacity Planning & SLA Risk Analysis (SQL)
 
-## 📊 Project Overview
-This project analyzes linehaul logistics performance using SQL.  
-It focuses on capacity utilization, SLA breaches, delays, and hub bottlenecks.
+## 📌 Project Overview
+This project analyzes linehaul logistics operations to identify:
+- Capacity utilization issues across hubs
+- Route-level delay risks
+- SLA breach patterns
+- High-risk operational routes
 
-## 🎯 Objectives
-- Measure route capacity utilization
-- Identify SLA breach %
-- Detect overloaded & underutilized hubs
-- Build Route Performance Scorecard
+The goal is to help operations leadership take proactive decisions
+for improving delivery reliability and capacity planning.
 
-## 🗂️ Dataset
-- hubs.csv
-- routes.csv
-- shipments_1000.csv
-
-## 🧠 Key Analysis Performed
-- Hub Utilization Analysis
-- SLA Breach Detection
-- Delay Percentage Calculation
-- Bottleneck Hub Detection
-- Route Performance Scorecard
+## 🧠 Key Business Questions Solved
+1. Which hubs are overloaded or underutilized?
+2. Which routes face frequent shipment delays?
+3. Which routes breach SLA frequently?
+4. Which routes are high operational risk?
+5. What final dataset can power an executive dashboard?
 
 ## 🛠️ Tools Used
-- SQL (CTE, CASE WHEN, Aggregations)
-- GitHub for version control
+- SQL (MySQL)
+- Aggregations & CASE logic
+- CTEs (Common Table Expressions)
+- Business KPI Calculations
 
-## 🚀 Business Impact
-Helps logistics teams:
-- Identify overloaded hubs
-- Improve route planning
-- Reduce SLA breaches
-- Optimize capacity utilization
+## 📊 Key Metrics Built
+- Capacity Utilization %
+- Delay %
+- SLA Breach %
+- Route Risk Category (High / Medium / Low)
+
+## 📁 Project Structure
+- `sql/` → All analysis queries
+- `data/` → Sample datasets (hubs, routes, shipments)
+- `README.md` → Project documentation
+
+## 🎯 Final Output
+A single **Executive Dashboard Dataset** that can directly feed into:
+- Power BI
+- Excel Dashboards
+- Operations Review Reports
